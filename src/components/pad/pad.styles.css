@@ -7,8 +7,26 @@ button{
 }
 .red{
     background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
-.specials{
-    background-color: orange;
+
+
+#equals{
+ grid-row-start: 4;
+ grid-row-end: 6;
+ grid-column-start: 4;
+ background-color: aqua;
+}
+
+#zero{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#add,
+#subtract,
+#divide,
+#multiply{
+    background-color: rgb(183, 189, 189);
 }
