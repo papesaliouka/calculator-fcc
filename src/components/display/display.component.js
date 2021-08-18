@@ -1,10 +1,14 @@
 import './display.styles.css';
+import { useContext } from 'react';
+import {CalculatorContext} from '../../context/calculator.context';
 
 
 const Display = ()=>{
+    const {display, preview} =useContext(CalculatorContext);
     return(
-        <div className='display' id='display' >
-            0
+        <div className='display'  >
+            <p id='preview'>{preview}</p>
+            <p id='display'>{display}</p>
         </div>
     );
 };
