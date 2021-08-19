@@ -1,17 +1,18 @@
-import {createContext, useState} from 'react';
+import {createContext, useState, useEffect} from 'react';
 
 export const CalculatorContext = createContext();
 
 export const CalculatorContextProvider = ({children})=>{
     const [display, setDisplay] = useState('0');
-    const [preview, setPreview] = useState('');
+    const [isDecimalClick, setIsDecimalClick] = useState(false);
+    useEffect(()=>console.log(display),[display])
     return(
         <CalculatorContext.Provider
             value={{
                 display,
                 setDisplay,
-                preview,
-                setPreview
+                isDecimalClick,
+                setIsDecimalClick
             }}
          >
             {children}

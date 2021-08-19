@@ -4,11 +4,10 @@ import {CalculatorContext} from '../../context/calculator.context';
 
 
 const Display = ()=>{
-    const {display, preview} =useContext(CalculatorContext);
+    const {display} =useContext(CalculatorContext);
     return(
-        <div className='display'  >
-            <p id='preview'>{preview}</p>
-            <p id='display'>{display}</p>
+        <div className='display' id='display' >
+            {display}
         </div>
     );
 };

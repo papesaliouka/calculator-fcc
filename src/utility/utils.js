@@ -9,7 +9,7 @@ const ids= {
     8: 'eight',
     9: 'nine',
     0: 'zero',
-    'x': 'multiply',
+    '*': 'multiply',
     '/': 'divide',
     '+': 'add',
     '-': 'subtract',
